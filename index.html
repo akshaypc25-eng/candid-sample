@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Candid Wedding Stories | Wedding Photographers in Mumbai</title>
+<meta name="description" content="Candid wedding, pre-wedding and film photography in Mumbai. Based in Goregaon West.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef0f1; --fg:#15181c; --muted:#5a636b; --card:#ffffff; --line:#d5dade; --accent:#1f5a52; --accent-fg:#ffffff; --dark:#15181c; --dark-fg:#f2f3f4;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1214;--fg:#eceef0;--muted:#a0a9b0;--card:#1a1f23;--line:#2b3238;--accent:#59b3a5;--accent-fg:#0b1513;--dark:#080a0b}
+}
+:root[data-theme="dark"]{--bg:#0f1214;--fg:#eceef0;--muted:#a0a9b0;--card:#1a1f23;--line:#2b3238;--accent:#59b3a5;--accent-fg:#0b1513;--dark:#080a0b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Work Sans",system-ui,sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:"Bodoni Moda",Georgia,serif;font-weight:500;line-height:1.08;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+.logo{font-family:"Bodoni Moda",serif;font-size:21px;font-weight:700;text-decoration:none}
+nav a{margin-left:20px;text-decoration:none;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;padding-top:54px;padding-bottom:60px}
+.hero h1{font-size:clamp(42px,7.5vw,78px)}
+.hero h1 em{font-style:italic}
+.hero p{max-width:28em;color:var(--muted);margin:18px 0 28px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);font-weight:600;padding:13px 26px;border-radius:2px;text-decoration:none;border:2px solid var(--accent)}
+.btn.alt{background:transparent;color:var(--fg);border-color:var(--fg);margin-left:10px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.stack{position:relative;height:420px}
+.fr{position:absolute;background:#fff;padding:10px 10px 38px;box-shadow:0 8px 24px #0003;width:56%}
+.fr .ph{position:relative;aspect-ratio:4/5;overflow:hidden}
+.fr img,.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.f1{left:0;top:30px;transform:rotate(-5deg)}.f2{right:0;top:0;transform:rotate(4deg)}
+.g1{background:linear-gradient(160deg,#243b3a,#c7b89a)}.g2{background:linear-gradient(160deg,#6c5b53,#e5d5c5)}
+.strip{background:var(--dark);color:var(--dark-fg)}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:6px 34px;justify-content:center;padding-top:16px;padding-bottom:16px;font-weight:500}
+section{padding:68px 0}
+h2{font-size:clamp(32px,5vw,48px);margin-bottom:10px}
+.lead{color:var(--muted);max-width:36em;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-top:1px solid var(--line)}
+.svc{padding:24px 20px 24px 0;border-bottom:1px solid var(--line)}
+.svc h3{font-size:26px;margin-bottom:6px}
+.svc p{margin:0;color:var(--muted);font-size:16px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tile{position:relative;overflow:hidden;aspect-ratio:4/5;display:flex;align-items:flex-end;padding:12px;color:#fff;font-size:15px;font-weight:500}
+.tile span{position:relative;background:#0007;padding:2px 10px}
+.t1{background:linear-gradient(160deg,#243b3a,#c7b89a)}.t2{background:linear-gradient(160deg,#4a3b42,#e0b9a8)}.t3{background:linear-gradient(160deg,#1f3a4a,#a8c0c9)}
+.t4{background:linear-gradient(160deg,#5a4a30,#e8d8b0)}.t5{background:linear-gradient(160deg,#2b2f3a,#9aa3bd)}.t6{background:linear-gradient(160deg,#3b4a3a,#cfd8b8)}
+.steps{counter-reset:s;display:grid;gap:12px;max-width:640px}
+.steps div{background:var(--card);border:1px solid var(--line);padding:16px 20px 16px 62px;position:relative}
+.steps div::before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-fg);font-weight:600;display:grid;place-items:center}
+.steps b{display:block}
+.contact{background:var(--dark);color:var(--dark-fg)}
+.contact .lead{color:#b9c0c6}
+.contact address{font-style:normal;margin:20px 0;color:#d6dbe0}
+.contact .btn.alt{color:var(--dark-fg);border-color:#ffffff66}
+footer{padding:22px 0;text-align:center;font-size:14px;color:var(--muted)}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#08331a;font-weight:600;padding:12px 18px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px #0004;z-index:6}
+@media(max-width:720px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:34px}
+  .stack{height:340px;order:-1}
+  nav a:not(:last-child){display:none}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .btn.alt{margin:12px 0 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Candid Wedding Stories</a>
+  <nav><a href="#shoots">What we shoot</a><a href="#work">Portfolio</a><a href="#how">Booking</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Real moments, <em>photographed</em> as they happen</h1>
+    <p>Candid Wedding Stories shoots weddings, pre-wedding sessions and films across Mumbai. No stiff poses, just your day as it felt.</p>
+    <a class="btn" href="https://wa.me/919029182256?text=Hi%20Candid%20Wedding%20Stories%2C%20I%27d%20like%20to%20check%20your%20availability." target="_blank" rel="noopener">Check your date</a>
+    <a class="btn alt" href="#work">View portfolio</a>
+  </div>
+  <div class="stack" role="img" aria-label="Two photo prints of wedding moments">
+    <div class="fr f1"><div class="ph g1"><img src="photo1.jpg" alt="Wedding photograph" onerror="this.remove()"></div></div>
+    <div class="fr f2"><div class="ph g2"><img src="photo2.jpg" alt="Pre-wedding photograph" onerror="this.remove()"></div></div>
+  </div>
+</div></div>
+
+<div class="strip"><div class="wrap">
+  <span>Rated 4.9 on Google from 117 reviews</span>
+  <span>Based in Goregaon West, Mumbai</span>
+  <span>Photography and films</span>
+</div></div>
+
+<section id="shoots"><div class="wrap">
+  <h2>What we shoot</h2>
+  <p class="lead">Choose a single event or cover the whole celebration.</p>
+  <div class="grid">
+    <div class="svc"><h3>Wedding photography</h3><p>Rituals, family, and the small moments in between.</p></div>
+    <div class="svc"><h3>Pre-wedding shoots</h3><p>A relaxed session at a location you pick, with ideas for poses.</p></div>
+    <div class="svc"><h3>Wedding and pre-wedding films</h3><p>Cinematic films that tell your story in motion.</p></div>
+    <div class="svc"><h3>Engagement shoots</h3><p>Photos for your ring ceremony and engagement day.</p></div>
+  </div>
+</div></section>
+
+<section id="work" style="padding-top:0"><div class="wrap">
+  <h2>Portfolio</h2>
+  <p class="lead">A look at the kinds of stories we capture. Real client photos go here.</p>
+  <div class="gal">
+    <div class="tile t1"><img src="photo1.jpg" alt="Wedding photograph" loading="lazy" onerror="this.remove()"><span>Wedding</span></div>
+    <div class="tile t2"><img src="photo2.jpg" alt="Pre-wedding photograph" loading="lazy" onerror="this.remove()"><span>Pre-wedding</span></div>
+    <div class="tile t3"><img src="photo3.jpg" alt="Engagement photograph" loading="lazy" onerror="this.remove()"><span>Engagement</span></div>
+    <div class="tile t4"><img src="photo4.jpg" alt="Ceremony photograph" loading="lazy" onerror="this.remove()"><span>Ceremony</span></div>
+    <div class="tile t5"><img src="photo5.jpg" alt="Couple portrait" loading="lazy" onerror="this.remove()"><span>Couple portraits</span></div>
+    <div class="tile t6"><img src="photo6.jpg" alt="Family photograph" loading="lazy" onerror="this.remove()"><span>Family moments</span></div>
+  </div>
+</div></section>
+
+<section id="how" style="padding-top:0"><div class="wrap">
+  <h2>How booking works</h2>
+  <p class="lead">Three steps from first message to your wedding day.</p>
+  <div class="steps">
+    <div><b>Check your date</b>Message us your date, city and the events you want covered.</div>
+    <div><b>Get a clear quote</b>We share a package and price before you book anything.</div>
+    <div><b>We shoot, you enjoy</b>Our team covers your events and delivers your photos and films.</div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Let's plan your shoot</h2>
+  <p class="lead">Send your date and we will reply with availability.</p>
+  <address>First Floor, Adishakti Building, 112, Mahatma Gandhi Rd,<br>Belwalkar Wadi, Goregaon West, Mumbai 400104<br>Phone: <a href="tel:+919029182256">+91 90291 82256</a></address>
+  <a class="btn" href="https://wa.me/919029182256?text=Hi%20Candid%20Wedding%20Stories%2C%20I%27d%20like%20to%20check%20your%20availability." target="_blank" rel="noopener">Chat on WhatsApp</a>
+  <a class="btn alt" href="https://www.instagram.com/candidweddingstories/" target="_blank" rel="noopener">Instagram</a>
+</div></section>
+</main>
+
+<footer>© Candid Wedding Stories, Mumbai</footer>
+<a class="wa" href="https://wa.me/919029182256" target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>
